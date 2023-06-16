@@ -5,6 +5,7 @@ import java.util.List;
 
 public class HibernateEntityManager {
     final private static EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("default");
+
     public static void getAllDevicesTypedQuery() {
         EntityManager entityManager = entityManagerFactory.createEntityManager();
         TypedQuery<Device> query = entityManager
